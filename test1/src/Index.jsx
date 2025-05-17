@@ -13,19 +13,27 @@ const Index = () => {
 
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <h1>All Products</h1>
          <div className="product-grid">
+             <div className="row">
       {products.map(product => (
-        <div className="product-card" key={product.id}>
-          <img src={product.image} alt={product.title} />
+
+        <div className="col-md-4" key={product.id}>
+            <div style={{ height: '250px', overflow: 'hidden' }}  className=''>
+
+          <img src={product.image} alt={product.title} className='card-img' />
+            </div>
           <h2>{product.title}</h2>
           <p>{product.description}</p>
           <p>Price: ${product.price}</p>
-          <button>Add to Cart</button>
+          <div className='text-center'>
+          <button className='btn btn-success '>Add to Cart</button>
+          </div>
         </div>
       ))}
     </div>
+</div>
     </>
   )
 }
