@@ -5,7 +5,9 @@ import Index from './Index.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-   
-    <Index />
+   <Provider store={store}>
+    <App />
+   </Provider>
+    {/* <Index /> */}
   </StrictMode>,
 )
