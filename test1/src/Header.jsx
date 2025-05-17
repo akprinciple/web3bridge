@@ -1,4 +1,5 @@
 import React from 'react'
+import CartIcon from './CartIcon'
 
 const Header = () => {
   return (
@@ -15,9 +16,7 @@ const Header = () => {
         <li><a href="#" class="nav-link px-2 link-dark">About</a></li>
       </ul>
 
-      <div class="col-md-3 text-end">
-        <button type="button" class="btn btn-outline-primary me-2"><i className='fas fa-cart-shopping'></i></button>
-      </div>
+      
     </header>
     </div>
   )

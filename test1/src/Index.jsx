@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Header from './Header';
+import CartIcon from './CartIcon';
 
 
 const Index = () => {
@@ -38,6 +39,11 @@ const addToCart = (product) => {
   return (
     <>
       <Header />
+      <div class="p-3 text-end">
+        <CartIcon cart={cart} />
+
+        {/* <button type="button" class="btn btn-outline-primary me-2"><i className='fas fa-cart-shopping'></i></button> */}
+      </div>
       <h1>All Products</h1>
          <div className="product-grid">
              <div className="row">
